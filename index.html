@@ -4,78 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин украшений</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #F2F8FD;
             color: #333;
         }
         header {
-            background-color: #2d3b55;
+            background-color: #6BAF92;
             color: #fff;
-            padding: 20px 10px;
+            padding: 20px;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.8em;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 5px;
         }
         .products-section {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 20px;
-            padding: 20px;
+            padding: 30px;
         }
         .product-card {
             background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         .product-card img {
             width: 100%;
             height: auto;
+            border-bottom: 1px solid #F2F8FD;
         }
         .product-card .product-info {
             padding: 20px;
             text-align: center;
         }
         .product-card h2 {
-            font-family: 'Open Sans', sans-serif;
             font-weight: 600;
-            margin: 0 0 10px;
+            margin: 0 0 8px;
+            font-size: 1.4em;
+            color: #5BFF62; /* Сохраняем яркий акцент для товаров */
         }
         .product-card p {
             font-size: 1em;
             margin: 0 0 10px;
-            color: #666;
+            color: #555;
         }
         .product-card .price {
-            font-size: 1.2em;
+            font-size: 1.3em;
             font-weight: 700;
-            margin-top: 10px;
-            color: #2d3b55;
+            margin-top: 12px;
+            color: #5BFF62;
         }
         .product-card:hover {
-            transform: scale(1.05);
+            transform: scale(1.03);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
         }
         .contact-section {
-            background-color: #2d3b55;
+            background-color: #6BAF92;
             color: #fff;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
         }
         .contact-section h2 {
             margin: 0;
-            font-size: 1.8em;
+            font-size: 2em;
         }
         .contact-section p {
             margin-top: 10px;
             font-size: 1.2em;
+        }
+        .contact-section a {
+            color: #F2F8FD;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact-section a:hover {
+            color: #dff7e5;
         }
     </style>
 </head>
@@ -88,18 +104,18 @@
 
 <section class="products-section">
     <div class="product-card">
-        <img src="1.jpg" alt="Кольцо из серебра">
+        <img src="1.jpg" alt="Браслет 'Heart to heart'">
         <div class="product-info">
             <h2>Браслет "Heart to heart"</h2>
-            <p>(Белый и чёрный агат d = 8 мм, серый агат d = 6 мм, снежный обсидиан крошка d ~ 5 мм, разделительные серебряные бусины, магнитный замок в форме сердца)</p>
+            <p>Белый и чёрный агат d = 8 мм, серый агат d = 6 мм, снежный обсидиан крошка d ~ 5 мм, разделительные серебряные бусины, магнитный замок в форме сердца</p>
             <p class="price">450 ₽</p>
         </div>
     </div>
     <div class="product-card">
-        <img src="2.jpg" alt="Браслет с камнями">
+        <img src="2.jpg" alt="Ожерелье 'Милая Кокетка'">
         <div class="product-info">
             <h2>Ожерелье "Милая Кокетка"</h2>
-            <p>длиной 39-40 см (Розовый агат d=4 мм, розовое ювелирное стекло d=6 мм, круглые серебристые разделительные бусины)</p>
+            <p>Розовый агат d=4 мм, розовое ювелирное стекло d=6 мм, круглые серебристые разделительные бусины</p>
             <p class="price">650 ₽</p>
         </div>
     </div>
@@ -109,7 +125,7 @@
     <h2>Контакты</h2>
     <p>Телефон: +7 999 123 45 67</p>
     <p>Email: example@mail.com</p>
-    <p>Instagram: <a href="https://instagram.com/example" target="_blank" style="color: #fff;">@example</a></p>
+    <p>Instagram: <a href="https://instagram.com/example" target="_blank">@example</a></p>
 </section>
 
 </body>
