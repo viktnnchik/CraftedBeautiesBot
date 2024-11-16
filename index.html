@@ -1,1 +1,116 @@
-"�ਢ��, ���" 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин украшений</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #2d3b55;
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .products-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        .product-card .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+        .product-card h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            margin: 0 0 10px;
+        }
+        .product-card p {
+            font-size: 1em;
+            margin: 0 0 10px;
+            color: #666;
+        }
+        .product-card .price {
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-top: 10px;
+            color: #2d3b55;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .contact-section {
+            background-color: #2d3b55;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-section h2 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        .contact-section p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Магазин ручных украшений</h1>
+    <p>Индивидуальные украшения ручной работы</p>
+</header>
+
+<section class="products-section">
+    <div class="product-card">
+        <img src="https://example.com/ring.jpg" alt="Кольцо из серебра">
+        <div class="product-info">
+            <h2>Кольцо из серебра</h2>
+            <p>Элегантное кольцо ручной работы из серебра. Отлично подходит для любого случая.</p>
+            <p class="price">2 500 ₽</p>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="https://example.com/bracelet.jpg" alt="Браслет с камнями">
+        <div class="product-info">
+            <h2>Браслет с камнями</h2>
+            <p>Браслет с натуральными камнями. Создаёт гармонию и стиль в любой ситуации.</p>
+            <p class="price">1 800 ₽</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section">
+    <h2>Контакты</h2>
+    <p>Телефон: +7 999 123 45 67</p>
+    <p>Email: example@mail.com</p>
+    <p>Instagram: <a href="https://instagram.com/example" target="_blank" style="color: #fff;">@example</a></p>
+</section>
+
+</body>
+</html>
